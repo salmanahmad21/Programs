@@ -1,9 +1,10 @@
 a = [[1, 2, 3], [7, 8, 9]]
 b = [[5, 6, 7], [3, 4, 5]]
-c = []
+c = [[0, 0, 0], [0, 0, 0]]
 
 for row in range(2):
     for col in range(3):
-        c.append(a[row][col] + b[row][col])
+        c[row][col] = a[row][col] + b[row][col]
 
-print(c)
+for matrix in c:
+    print(matrix)
